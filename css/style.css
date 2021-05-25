@@ -1,0 +1,58 @@
+/* 
+Theme: Brian Gamboa 
+Version: 1.0
+Date: 
+*/
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /** Reset para REMS - 62.5% = 10px de 16px **/
+  scroll-behavior: smooth;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  line-height: 1.7;
+}
+
+:root {
+  --black-primary: #20202a;
+  --grey: #8c8c8e;
+  --white: #fafafc;
+}
+/* Globales */
+.conteiner {
+  max-width: 120rem;
+  width: 95%;
+  margin: 0 auto;
+}
+
+/* Header */
+.header {
+  background-color: var(--black-primary);
+  height: 70px;
+}
+.header__content {
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__content--left-menu i {
+  color: var(--grey);
+  font-size: 1.5rem;
+  padding: 1rem;
+  cursor: pointer;
+}
+.header__content--right-menu i {
+  color: var(--grey);
+  font-size: 1.9rem;
+  padding: 1rem;
+  cursor: pointer;
+}
+.header__content--left-menu i:hover,
+.header__content--right-menu i:hover {
+  color: var(--white);
+}
