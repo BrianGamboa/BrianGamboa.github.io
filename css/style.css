@@ -14,13 +14,14 @@ html {
   box-sizing: inherit;
 }
 body {
-  line-height: 1.7;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
 }
 
 :root {
   --black-primary: #20202a;
   --grey: #8c8c8e;
-  --white: #fafafc;
+  --light: #f8f9fa;
 }
 /* Globales */
 .conteiner {
@@ -28,11 +29,38 @@ body {
   width: 95%;
   margin: 0 auto;
 }
+img {
+  max-width: 100%;
+}
+h1 {
+  font-size: 6.5rem;
+}
+h2 {
+  font-size: 5.9rem;
+}
+h3 {
+  font-size: 4.8rem;
+}
+h4 {
+  font-size: 3.4rem;
+}
+h5 {
+  font-size: 2.4rem;
+}
+/* Utilidades */
+.button {
+  background: #ffc107;
+  font-size: 1.6rem;
+  padding: 1rem 2rem;
+  color: var(--black-primary);
+  text-decoration: none;
+  display: inline-block;
+}
 
-/* Header */
+/*----------------- Header-------------------*/
 .header {
   background-color: var(--black-primary);
-  height: 70px;
+  height: 7rem;
 }
 .header__content {
   height: inherit;
@@ -54,5 +82,48 @@ body {
 }
 .header__content--left-menu i:hover,
 .header__content--right-menu i:hover {
-  color: var(--white);
+  color: var(--light);
+}
+/*-------------------- hero----------------- */
+.main {
+  background-image: linear-gradient(
+      90deg,
+      rgba(45, 45, 58, 0.9) 15%,
+      rgba(45, 45, 58, 0.9) 50%,
+      rgba(43, 43, 53, 0.9) 100%
+    ),
+    url(../images/bg.jpg);
+  padding: 1rem;
+  background-size: cover;
+  background-position: center;
+}
+.main__hero {
+  position: relative;
+  background-image: linear-gradient(
+      90deg,
+      rgba(45, 45, 58, 0.9) 15%,
+      rgba(45, 45, 58, 0.7) 50%,
+      rgba(43, 43, 53, 0.7) 100%
+    ),
+    url(../images/hero.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.main__hero-title {
+  padding: 60px 30px;
+}
+.main__hero-title h1 {
+  color: var(--light);
+  line-height: 1.2;
+  margin: 0 0 1rem 0;
+  font-size: 4.6rem;
+  font-weight: 800;
+}
+.main__hero-title p {
+  font-size: 2rem;
+  color: var(--light);
+  margin: 1rem 0;
+}
+.main__hero-title .button {
+  margin-top: 3rem;
 }
